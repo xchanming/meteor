@@ -263,7 +263,7 @@ import {
   MtModalTrigger,
   MtModalAction,
   MtText,
-} from "@shopware-ag/meteor-component-library";
+} from "@cicada-ag/meteor-component-library";
 import SwBlockStack from "./components/sw-block-stack.vue";
 
 const showBanner = ref();

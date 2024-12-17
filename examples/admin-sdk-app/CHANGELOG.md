@@ -13,7 +13,7 @@
 - Updated dependencies [936ccf3]
 - Updated dependencies [2f0a666]
 - Updated dependencies [07e243a]
-  - @shopware-ag/meteor-component-library@3.14.0
+  - @cicada-ag/meteor-component-library@3.14.0
   - @shopware-ag/meteor-admin-sdk@5.5.1
 
 ## 1.0.21
@@ -33,7 +33,7 @@
 - Updated dependencies [1efc49c]
 - Updated dependencies [c43799c]
 - Updated dependencies [79f0b40]
-  - @shopware-ag/meteor-component-library@3.13.0
+  - @cicada-ag/meteor-component-library@3.13.0
   - @shopware-ag/meteor-admin-sdk@5.5.0
 
 ## 1.0.20
@@ -58,7 +58,7 @@
 - Updated dependencies [8045090]
 - Updated dependencies [ebe7a33]
 - Updated dependencies [bebea2e]
-  - @shopware-ag/meteor-component-library@3.12.0
+  - @cicada-ag/meteor-component-library@3.12.0
   - @shopware-ag/meteor-admin-sdk@5.4.6
 
 ## 1.0.19
@@ -66,7 +66,7 @@
 ### Patch Changes
 
 - Updated dependencies [1319ae3]
-  - @shopware-ag/meteor-component-library@3.11.0
+  - @cicada-ag/meteor-component-library@3.11.0
   - @shopware-ag/meteor-admin-sdk@5.4.5
 
 ## 1.0.18
@@ -77,7 +77,7 @@
 - Updated dependencies [6e9cc2b]
 - Updated dependencies [4c8d610]
   - @shopware-ag/meteor-admin-sdk@5.4.4
-  - @shopware-ag/meteor-component-library@3.10.0
+  - @cicada-ag/meteor-component-library@3.10.0
 
 ## 1.0.17
 
@@ -87,7 +87,7 @@
 - Updated dependencies [8c74a37]
 - Updated dependencies [573953b]
 - Updated dependencies [0ee7820]
-  - @shopware-ag/meteor-component-library@3.9.0
+  - @cicada-ag/meteor-component-library@3.9.0
   - @shopware-ag/meteor-admin-sdk@5.4.3
 
 ## 1.0.16
@@ -101,7 +101,7 @@
 - Updated dependencies [cdb9eda]
 - Updated dependencies [8182c77]
 - Updated dependencies [3eb91a0]
-  - @shopware-ag/meteor-component-library@3.8.2
+  - @cicada-ag/meteor-component-library@3.8.2
   - @shopware-ag/meteor-admin-sdk@5.4.2
 
 ## 1.0.15
@@ -111,7 +111,7 @@
 - Updated dependencies [def10ee]
 - Updated dependencies [81f8d4c]
 - Updated dependencies [d60aad5]
-  - @shopware-ag/meteor-component-library@3.8.1
+  - @cicada-ag/meteor-component-library@3.8.1
   - @shopware-ag/meteor-admin-sdk@5.4.1
 
 ## 1.0.14
@@ -137,7 +137,7 @@
 - Updated dependencies [19bba6e]
 - Updated dependencies [16be216]
 - Updated dependencies [2b13b0b]
-  - @shopware-ag/meteor-component-library@3.8.0
+  - @cicada-ag/meteor-component-library@3.8.0
   - @shopware-ag/meteor-admin-sdk@5.3.1
 
 ## 1.0.12
@@ -159,7 +159,7 @@
 - Updated dependencies [b9b4005]
 - Updated dependencies [fbe8152]
 - Updated dependencies [d9f7c3e]
-  - @shopware-ag/meteor-component-library@3.7.0
+  - @cicada-ag/meteor-component-library@3.7.0
   - @shopware-ag/meteor-admin-sdk@5.2.1
 
 ## 1.0.10
@@ -171,7 +171,7 @@
 - Updated dependencies [321a830]
 - Updated dependencies [3b22c7a]
 - Updated dependencies [b54d88c]
-  - @shopware-ag/meteor-component-library@3.6.0
+  - @cicada-ag/meteor-component-library@3.6.0
   - @shopware-ag/meteor-admin-sdk@5.2.0
 
 ## 1.0.9
@@ -179,7 +179,7 @@
 ### Patch Changes
 
 - Updated dependencies [b68fa55]
-  - @shopware-ag/meteor-component-library@3.5.1
+  - @cicada-ag/meteor-component-library@3.5.1
 
 ## 1.0.8
 
@@ -189,7 +189,7 @@
 - Updated dependencies [85942a2]
 - Updated dependencies [95cdb1f]
   - @shopware-ag/meteor-admin-sdk@5.1.1
-  - @shopware-ag/meteor-component-library@3.5.0
+  - @cicada-ag/meteor-component-library@3.5.0
 
 ## 1.0.7
 
@@ -198,7 +198,7 @@
 - Updated dependencies [7ff2788]
 - Updated dependencies [97ba4d8]
 - Updated dependencies [aa772a9]
-  - @shopware-ag/meteor-component-library@3.4.0
+  - @cicada-ag/meteor-component-library@3.4.0
   - @shopware-ag/meteor-admin-sdk@5.1.0
 
 ## 1.0.6
@@ -210,7 +210,7 @@
 - Updated dependencies [e7d95c3]
 - Updated dependencies [0ba5c91]
 - Updated dependencies [856489b]
-  - @shopware-ag/meteor-component-library@3.3.0
+  - @cicada-ag/meteor-component-library@3.3.0
   - @shopware-ag/meteor-admin-sdk@5.0.2
 
 ## 1.0.5
@@ -218,14 +218,14 @@
 ### Patch Changes
 
 - Updated dependencies [e0e1741]
-  - @shopware-ag/meteor-component-library@3.2.0
+  - @cicada-ag/meteor-component-library@3.2.0
 
 ## 1.0.4
 
 ### Patch Changes
 
 - Updated dependencies [6c6678d]
-  - @shopware-ag/meteor-component-library@3.1.0
+  - @cicada-ag/meteor-component-library@3.1.0
 
 ## 1.0.3
 
@@ -233,7 +233,7 @@
 
 - Updated dependencies [bff12c5]
 - Updated dependencies [8a9066a]
-  - @shopware-ag/meteor-component-library@3.0.0
+  - @cicada-ag/meteor-component-library@3.0.0
 
 ## 1.0.2
 
