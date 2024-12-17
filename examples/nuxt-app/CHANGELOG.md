@@ -1,5 +1,38 @@
 # nuxt-app
 
+## 0.0.16
+
+### Patch Changes
+
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+  - @cicada-ag/meteor-component-library@4.0.0
+
 ## 0.0.15
 
 ### Patch Changes
