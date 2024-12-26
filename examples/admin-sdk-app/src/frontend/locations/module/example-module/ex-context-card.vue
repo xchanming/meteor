@@ -87,7 +87,7 @@ async function getCurrentCurrency() {
 }
 
 async function getCurrentShopwareVersion() {
-  const currentShopwareVersion = await context.getShopwareVersion();
+  const currentShopwareVersion = await context.getCicadaVersion();
 
   notification.dispatch({
     title: 'Current Shopware version',

@@ -61,7 +61,7 @@ export default defineComponent({
 
             <div>
                 <h3>Context - Get current Shopware version</h3>
-                <sw-button @click="getShopwareVersion">Get current Shopware version</sw-button>
+                <sw-button @click="getCicadaVersion">Get current Shopware version</sw-button>
 
                 <p>
                     Shopware version: {{ shopwareVersion }}
@@ -176,8 +176,8 @@ export default defineComponent({
         },
 
         // context / get current Shopware version
-        async getShopwareVersion() {
-            this.shopwareVersion = await context.getShopwareVersion();
+        async getCicadaVersion() {
+            this.shopwareVersion = await context.getCicadaVersion();
         },
 
         // context / get App information
