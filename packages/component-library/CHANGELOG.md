@@ -1,5 +1,69 @@
 # Changelog
 
+## 4.0.0
+
+### Major Changes
+
+- c347816: Reduce bundle size caused by font
+
+  # Upgrade guide
+
+  Previously you needed to only import one css file:
+
+  ```js
+  // Some JavaScript file: index.js
+  import "@cicada-ag/meteor-component-library/dist/styles.css";
+  ```
+
+  You now need to update that one import to the following two imports:
+
+  ```js
+  // Some JavaScript file: index.js
+  import "@cicada-ag/meteor-component-library/styles.css"; // Note: this path is different from the old one
+  import "@cicada-ag/meteor-component-library/font.css";
+  ```
+
+  If you want to load the font by yourself, you can do that.
+  Remove the second import and load the font the way you want.
+
+- c347816: Making vue a peer dependency
+
+  This allows you to define the version of Vue you want to use. Before
+  you needed to use the exact vue version Meteor used. Now you can
+  define it by yourself, but it must meet the version requirements.
+
+- c347816: Require a minimum version of vue 3.5
+
+### Minor Changes
+
+- c347816: Adds a new slot for custom content within the button, enabling more flexible button customization.
+- c347816: Export mt-tooltip component
+- c347816: remove hero variant from mt-card
+- c347816: replace flatpickr with vue3datepicker
+- c347816: Add mt-tooltip component
+- c347816: remove mt-url-field
+
+### Patch Changes
+
+- c347816: Hide inheritance toggle in card by default
+- c347816: Improve reading order for card titles when using a screen reader
+- c347816: Add translation for mt-banner
+- c347816: Add focus styles for checkbox
+- c347816: Open tooltip when focusing disabled button
+- c347816: Migrate mt-select over to the custom built i18n composable
+- c347816: Migrate mt-data-table over to the custom built i18n composable
+- c347816: Update focus style of inheritance toggle in card
+- c347816: Add missing translation for data table filters
+- c347816: Do not announce mt-avatar for screen readers
+- c347816: Add landmarks to card component for screen readers
+- c347816: Improve accessibility of mt-field-error
+- c347816: Increase contrast ratio in mt-avatar
+- c347816: Update focus style of switch
+- c347816: Migrate mt-data-table-settings over to the composition api
+- c347816: Increase color contrast in mt-avatar component
+- c347816: Make size propert on mt-loader optional
+- c347816: Migrate mt-label to custom built i18n composable
+
 ## 3.14.0
 
 ### Minor Changes
