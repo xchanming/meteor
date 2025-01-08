@@ -50,10 +50,10 @@
 
       <div v-if="appliedFilters.length > 0" class="mt-data-table__filter">
         <span>{{
-          isLoading
-            ? t("filter.fetchingFilteredResults")
-            : t("filter.numberOfResults", { n: numberOfResults ?? 0 })
-        }}</span>
+            isLoading
+              ? t("filter.fetchingFilteredResults")
+              : t("filter.numberOfResults", { n: numberOfResults ?? 0 })
+          }}</span>
 
         <div class="mt-data-table__filter-list">
           <mt-data-table-filter
@@ -137,147 +137,147 @@
           </caption>
 
           <thead>
-            <tr>
-              <th
-                v-if="enableRowNumbering"
-                v-stickyColumn
-                class="mt-data-table__table-row-number-head"
-                scope="col"
-              >
-                <span> # </span>
-              </th>
+          <tr>
+            <th
+              v-if="enableRowNumbering"
+              v-stickyColumn
+              class="mt-data-table__table-row-number-head"
+              scope="col"
+            >
+              <span> # </span>
+            </th>
 
-              <th
-                v-if="allowRowSelection"
-                v-stickyColumn
-                class="mt-data-table__table-selection-head"
-                scope="col"
-              >
-                <mt-checkbox :checked="somethingSelected" @change="handleSelectAll" />
-              </th>
+            <th
+              v-if="allowRowSelection"
+              v-stickyColumn
+              class="mt-data-table__table-selection-head"
+              scope="col"
+            >
+              <mt-checkbox :checked="somethingSelected" @change="handleSelectAll" />
+            </th>
 
-              <template v-for="column in sortedColumns">
-                <!-- @vue-skip -->
-                <th
-                  v-if="isColumnVisible(column)"
-                  :key="column.property"
-                  :ref="
+            <template v-for="column in sortedColumns">
+              <!-- @vue-skip -->
+              <th
+                v-if="isColumnVisible(column)"
+                :key="column.property"
+                :ref="
                     (el) => {
                       if (el) {
                         columnHeaderRefs[column.property] = el;
                       }
                     }
                   "
-                  v-draggable="{ ...dragConfig, data: column }"
-                  scope="col"
-                  class="mt-data-table__table-wrapper-table-head"
-                  :class="getColumnHeaderClasses(column)"
-                  :data-header-column-property="column.property"
-                  :style="renderColumnHeaderStyle(column)"
-                  :data-testid="'column-table-head__' + column.property"
-                  @mouseenter="() => (currentHoveredColumn = column.property)"
-                  @mouseleave="() => (currentHoveredColumn = null)"
+                v-draggable="{ ...dragConfig, data: column }"
+                scope="col"
+                class="mt-data-table__table-wrapper-table-head"
+                :class="getColumnHeaderClasses(column)"
+                :data-header-column-property="column.property"
+                :style="renderColumnHeaderStyle(column)"
+                :data-testid="'column-table-head__' + column.property"
+                @mouseenter="() => (currentHoveredColumn = column.property)"
+                @mouseleave="() => (currentHoveredColumn = null)"
+              >
+                <div
+                  class="mt-data-table__table-head-dragzone"
+                  :data-testid="'column-dragzone__' + column.property"
                 >
                   <div
-                    class="mt-data-table__table-head-dragzone"
-                    :data-testid="'column-dragzone__' + column.property"
+                    class="mt-data-table__table-head-dragzone-bar"
+                    :data-testid="'column-dragzone-bar__' + column.property"
                   >
-                    <div
-                      class="mt-data-table__table-head-dragzone-bar"
-                      :data-testid="'column-dragzone-bar__' + column.property"
-                    >
-                      <div class="mt-data-table__table-head-dragzone-indicator">
-                        <mt-icon name="regular-grip-horizontal-s" />
-                      </div>
+                    <div class="mt-data-table__table-head-dragzone-indicator">
+                      <mt-icon name="regular-grip-horizontal-s" />
                     </div>
                   </div>
+                </div>
+
+                <div
+                  class="mt-data-table__table-head-inner-wrapper"
+                  :class="getColumnHeaderInnerWrapperClasses(column)"
+                >
+                  <span>{{ column.label }}</span>
 
                   <div
-                    class="mt-data-table__table-head-inner-wrapper"
-                    :class="getColumnHeaderInnerWrapperClasses(column)"
+                    v-if="sortBy === column.property"
+                    class="mt-data-table__table-head-sorting-icons"
                   >
-                    <span>{{ column.label }}</span>
-
-                    <div
-                      v-if="sortBy === column.property"
-                      class="mt-data-table__table-head-sorting-icons"
-                    >
-                      <mt-icon
-                        :name="
+                    <mt-icon
+                      :name="
                           sortDirection === 'ASC' ? 'solid-long-arrow-up' : 'solid-long-arrow-down'
                         "
-                        class="mt-data-table__table-head-sort"
-                      />
-                    </div>
+                      class="mt-data-table__table-head-sort"
+                    />
                   </div>
+                </div>
 
-                  <div
-                    v-droppable="{ ...dropConfig, data: { ...column, dropZone: 'before' } }"
-                    class="mt-data-table__table-head-dropzone-before"
-                    :data-testid="'column-dropzone-before__' + column.property"
-                  />
-                  <div
-                    v-droppable="{ ...dropConfig, data: { ...column, dropZone: 'after' } }"
-                    class="mt-data-table__table-head-dropzone-after"
-                    :data-testid="'column-dropzone-after__' + column.property"
-                  />
+                <div
+                  v-droppable="{ ...dropConfig, data: { ...column, dropZone: 'before' } }"
+                  class="mt-data-table__table-head-dropzone-before"
+                  :data-testid="'column-dropzone-before__' + column.property"
+                />
+                <div
+                  v-droppable="{ ...dropConfig, data: { ...column, dropZone: 'after' } }"
+                  class="mt-data-table__table-head-dropzone-after"
+                  :data-testid="'column-dropzone-after__' + column.property"
+                />
 
-                  <mt-popover
-                    :title="column.label"
-                    class="mt-data-table__table-head-column-settings"
-                  >
-                    <template #trigger="{ toggleFloatingUi }">
-                      <div
-                        class="mt-data-table__table-head-column-settings-trigger"
-                        :data-testid="'column-settings-trigger__' + column.property"
-                        @click="toggleFloatingUi"
-                      >
-                        <!-- DIV Placeholder for clicking to open the column settings popover -->
-                      </div>
-                    </template>
+                <mt-popover
+                  :title="column.label"
+                  class="mt-data-table__table-head-column-settings"
+                >
+                  <template #trigger="{ toggleFloatingUi }">
+                    <div
+                      class="mt-data-table__table-head-column-settings-trigger"
+                      :data-testid="'column-settings-trigger__' + column.property"
+                      @click="toggleFloatingUi"
+                    >
+                      <!-- DIV Placeholder for clicking to open the column settings popover -->
+                    </div>
+                  </template>
 
-                    <template #popover-items__base="{ toggleFloatingUi }">
-                      <mt-popover-item
-                        v-if="column.sortable"
-                        :label="t('columnSettings.sortAscending')"
-                        icon="regular-long-arrow-up"
-                        contextual-detail="A -> Z"
-                        :on-label-click="
+                  <template #popover-items__base="{ toggleFloatingUi }">
+                    <mt-popover-item
+                      v-if="column.sortable"
+                      :label="t('columnSettings.sortAscending')"
+                      icon="regular-long-arrow-up"
+                      contextual-detail="A -> Z"
+                      :on-label-click="
                           () => onColumnSettingsSortChange(column.property, 'ASC', toggleFloatingUi)
                         "
-                      />
+                    />
 
-                      <mt-popover-item
-                        v-if="column.sortable"
-                        :label="t('columnSettings.sortDescending')"
-                        icon="regular-long-arrow-down"
-                        contextual-detail="Z -> A"
-                        :on-label-click="
+                    <mt-popover-item
+                      v-if="column.sortable"
+                      :label="t('columnSettings.sortDescending')"
+                      icon="regular-long-arrow-down"
+                      contextual-detail="Z -> A"
+                      :on-label-click="
                           () =>
                             onColumnSettingsSortChange(column.property, 'DESC', toggleFloatingUi)
                         "
-                      />
+                    />
 
-                      <mt-popover-item
-                        v-if="!isPrimaryColumn(column)"
-                        :label="t('columnSettings.hideColumn')"
-                        icon="regular-eye-slash"
-                        :on-label-click="() => changeColumnVisibility(column.property, false)"
-                        border-top
-                      />
-                    </template>
-                  </mt-popover>
+                    <mt-popover-item
+                      v-if="!isPrimaryColumn(column)"
+                      :label="t('columnSettings.hideColumn')"
+                      icon="regular-eye-slash"
+                      :on-label-click="() => changeColumnVisibility(column.property, false)"
+                      border-top
+                    />
+                  </template>
+                </mt-popover>
 
-                  <mt-floating-ui
-                    v-if="highlightedColumn === column.property && !isDragging"
-                    :is-opened="true"
-                    :offset="0"
-                    class="mt-data-table__table-head-add-column-indicator"
-                    :auto-update-options="{ animationFrame: true }"
-                  >
-                    <mt-popover
-                      :title="t('addColumnIndicator.popoverTitle')"
-                      @update:isOpened="
+                <mt-floating-ui
+                  v-if="highlightedColumn === column.property && !isDragging"
+                  :is-opened="true"
+                  :offset="0"
+                  class="mt-data-table__table-head-add-column-indicator"
+                  :auto-update-options="{ animationFrame: true }"
+                >
+                  <mt-popover
+                    :title="t('addColumnIndicator.popoverTitle')"
+                    @update:isOpened="
                         (value) => {
                           if (value === false) {
                             forceHighlightedColumn = false;
@@ -285,207 +285,207 @@
                           }
                         }
                       "
-                    >
-                      <template #trigger="{ toggleFloatingUi }">
-                        <mt-icon
-                          v-tooltip="{
+                  >
+                    <template #trigger="{ toggleFloatingUi }">
+                      <mt-icon
+                        v-tooltip="{
                             message: t('addColumnIndicator.tooltipMessage'),
                             width: 'auto',
                           }"
-                          name="solid-plus-square-s"
-                          :data-testid="'add-column-indicator-icon__' + column.property"
-                          @mouseenter="() => setHighlightedColumn(column)"
-                          @mouseleave="() => setHighlightedColumn(null)"
-                          @click="
+                        name="solid-plus-square-s"
+                        :data-testid="'add-column-indicator-icon__' + column.property"
+                        @mouseenter="() => setHighlightedColumn(column)"
+                        @mouseleave="() => setHighlightedColumn(null)"
+                        @click="
                             () => {
                               forceHighlightedColumn = true;
                               toggleFloatingUi();
                             }
                           "
-                        />
-                      </template>
+                      />
+                    </template>
 
-                      <template #popover-items__base="{ toggleFloatingUi }">
-                        <mt-popover-item-result
-                          :options="addColumnOptions"
-                          @search="onAddColumnSearch"
-                          @click-option="
+                    <template #popover-items__base="{ toggleFloatingUi }">
+                      <mt-popover-item-result
+                        :options="addColumnOptions"
+                        @search="onAddColumnSearch"
+                        @click-option="
                             (columnProperty) => {
                               onAddColumnOptionClick(columnProperty, column.property);
                               toggleFloatingUi();
                             }
                           "
-                        />
-                      </template>
-                    </mt-popover>
-                  </mt-floating-ui>
+                      />
+                    </template>
+                  </mt-popover>
+                </mt-floating-ui>
 
-                  <div
-                    v-if="column.allowResize !== false"
-                    class="mt-data-table__table-head-resizable mt-data-table__table-head-resizable-before"
-                    :data-testid="'mt-data-table__table-head-resizable-before__' + column.property"
-                    @mousedown.prevent.stop="
+                <div
+                  v-if="column.allowResize !== false"
+                  class="mt-data-table__table-head-resizable mt-data-table__table-head-resizable-before"
+                  :data-testid="'mt-data-table__table-head-resizable-before__' + column.property"
+                  @mousedown.prevent.stop="
                       () => startColumnResizing(getPreviousVisibleColumn(column))
                     "
-                    @mouseenter="() => setHighlightedColumn(getPreviousVisibleColumn(column))"
-                    @mouseleave="() => setHighlightedColumn(null)"
-                  />
+                  @mouseenter="() => setHighlightedColumn(getPreviousVisibleColumn(column))"
+                  @mouseleave="() => setHighlightedColumn(null)"
+                />
 
-                  <div
-                    v-if="column.allowResize !== false"
-                    class="mt-data-table__table-head-resizable mt-data-table__table-head-resizable-after"
-                    :data-testid="'mt-data-table__table-head-resizable-after__' + column.property"
-                    @mousedown.prevent.stop="() => startColumnResizing(column)"
-                    @mouseenter="() => setHighlightedColumn(column)"
-                    @mouseleave="() => setHighlightedColumn(null)"
-                  />
-                </th>
-              </template>
+                <div
+                  v-if="column.allowResize !== false"
+                  class="mt-data-table__table-head-resizable mt-data-table__table-head-resizable-after"
+                  :data-testid="'mt-data-table__table-head-resizable-after__' + column.property"
+                  @mousedown.prevent.stop="() => startColumnResizing(column)"
+                  @mouseenter="() => setHighlightedColumn(column)"
+                  @mouseleave="() => setHighlightedColumn(null)"
+                />
+              </th>
+            </template>
 
-              <th
-                v-if="!(disableSettingsTable && disableEdit && disableDelete)"
-                class="mt-data-table__table-settings-button"
-                scope="col"
-              >
-                <mt-data-table-settings
-                  v-if="!disableSettingsTable"
-                  :columns="sortedColumns"
-                  :show-outlines="showOutlines"
-                  :show-stripes="showStripes"
-                  :enable-outline-framing="enableOutlineFraming"
-                  :enable-row-numbering="enableRowNumbering"
-                  @change-show-outlines="(newValue) => $emit('change-show-outlines', newValue)"
-                  @change-show-stripes="(newValue) => $emit('change-show-stripes', newValue)"
-                  @change-outline-framing="(newValue) => $emit('change-outline-framing', newValue)"
-                  @change-enable-row-numbering="
+            <th
+              v-if="!(disableSettingsTable && disableEdit && disableDelete)"
+              class="mt-data-table__table-settings-button"
+              scope="col"
+            >
+              <mt-data-table-settings
+                v-if="!disableSettingsTable"
+                :columns="sortedColumns"
+                :show-outlines="showOutlines"
+                :show-stripes="showStripes"
+                :enable-outline-framing="enableOutlineFraming"
+                :enable-row-numbering="enableRowNumbering"
+                @change-show-outlines="(newValue) => $emit('change-show-outlines', newValue)"
+                @change-show-stripes="(newValue) => $emit('change-show-stripes', newValue)"
+                @change-outline-framing="(newValue) => $emit('change-outline-framing', newValue)"
+                @change-enable-row-numbering="
                     (newValue) => $emit('change-enable-row-numbering', newValue)
                   "
-                  @reset-all-changes="resetAllChanges"
-                  @change-column-order="
+                @reset-all-changes="resetAllChanges"
+                @change-column-order="
                     ({ itemId, dropId, dropZone }) => changeColumnPosition(itemId, dropId, dropZone)
                   "
-                  @change-column-visibility="
+                @change-column-visibility="
                     (columnProperty, visibility) =>
                       changeColumnVisibility(columnProperty, visibility)
                   "
-                />
-              </th>
-            </tr>
+              />
+            </th>
+          </tr>
           </thead>
 
           <tbody>
-            <template v-if="dataSource.length > 0 || isLoading">
-              <!-- @vue-skip -->
-              <tr
-                v-for="(data, rowIndex) in isLoading ? emptyData : dataSource"
-                :key="data.id"
-                :class="getColumnDataRowClasses(data.id)"
+          <template v-if="dataSource.length > 0 || isLoading">
+            <!-- @vue-skip -->
+            <tr
+              v-for="(data, rowIndex) in isLoading ? emptyData : dataSource"
+              :key="data.id"
+              :class="getColumnDataRowClasses(data.id)"
+            >
+              <td
+                v-if="enableRowNumbering"
+                v-stickyColumn
+                class="mt-data-table__table-row-number"
               >
-                <td
-                  v-if="enableRowNumbering"
-                  v-stickyColumn
-                  class="mt-data-table__table-row-number"
-                >
                   <span>
                     {{ getRealIndex(rowIndex) }}
                   </span>
-                </td>
+              </td>
 
-                <td v-if="allowRowSelection" v-stickyColumn class="mt-data-table__table-select-row">
-                  <mt-checkbox
-                    :checked="getSelectionValue(data.id)"
-                    @change="onRowSelect(data.id)"
-                  />
-                </td>
+              <td v-if="allowRowSelection" v-stickyColumn class="mt-data-table__table-select-row">
+                <mt-checkbox
+                  :checked="getSelectionValue(data.id)"
+                  @change="onRowSelect(data.id)"
+                />
+              </td>
 
-                <template v-for="column in sortedColumns">
-                  <td
-                    v-if="isColumnVisible(column)"
-                    :key="column.property + JSON.stringify(columnChanges[column.property])"
-                    :ref="
+              <template v-for="column in sortedColumns">
+                <td
+                  v-if="isColumnVisible(column)"
+                  :key="column.property + JSON.stringify(columnChanges[column.property])"
+                  :ref="
                       (el) => {
                         setColumnDataCellRefs({ el, column, index: rowIndex });
                       }
                     "
-                    :data-cell-column-property="column.property"
-                    :style="renderColumnDataCellStyle(column)"
-                    :class="getColumnDataCellClasses(column)"
-                    @mouseenter="() => setCurrentHoveredCell(column.property, data.id)"
-                    @mouseleave="() => setCurrentHoveredCell(null, null)"
-                  >
-                    <template v-if="isLoading">
-                      <mt-skeleton-bar />
-                    </template>
-
-                    <template v-else>
-                      <!-- Use the correct renderer for the column -->
-                      <mt-data-table-number-renderer
-                        v-if="column.renderer === 'number'"
-                        :data="data"
-                        :column-definition="column"
-                        @click="$emit('open-details', data)"
-                      />
-
-                      <mt-data-table-text-renderer
-                        v-else-if="column.renderer === 'text'"
-                        :data="data"
-                        :column-definition="column"
-                        @click="$emit('open-details', data)"
-                      />
-
-                      <mt-data-table-badge-renderer
-                        v-else-if="column.renderer === 'badge'"
-                        :data="data"
-                        :column-definition="column"
-                        @click="$emit('open-details', data)"
-                      />
-
-                      <mt-data-table-price-renderer
-                        v-else-if="column.renderer === 'price'"
-                        :data="data"
-                        :column-definition="column"
-                        @click="$emit('open-details', data)"
-                      />
-                    </template>
-                  </td>
-                </template>
-
-                <td
-                  v-if="!(disableSettingsTable && disableEdit && disableDelete)"
-                  class="mt-data-table__table-context-button"
+                  :data-cell-column-property="column.property"
+                  :style="renderColumnDataCellStyle(column)"
+                  :class="getColumnDataCellClasses(column)"
+                  @mouseenter="() => setCurrentHoveredCell(column.property, data.id)"
+                  @mouseleave="() => setCurrentHoveredCell(null, null)"
                 >
-                  <a v-if="!disableEdit" href="#" @click.prevent="$emit('open-details', data)">
-                    {{ t("contextButtons.edit") }}
-                  </a>
-                  <mt-context-button v-if="!(disableDelete && disableEdit)">
-                    <mt-context-menu-item
-                      v-if="!disableEdit"
-                      :label="t('contextButtons.edit')"
+                  <template v-if="isLoading">
+                    <mt-skeleton-bar />
+                  </template>
+
+                  <template v-else>
+                    <!-- Use the correct renderer for the column -->
+                    <mt-data-table-number-renderer
+                      v-if="column.renderer === 'number'"
+                      :data="data"
+                      :column-definition="column"
                       @click="$emit('open-details', data)"
                     />
 
-                    <mt-context-menu-item
-                      v-if="!disableDelete"
-                      type="critical"
-                      :label="t('contextButtons.delete')"
-                      @click="$emit('item-delete', data)"
+                    <mt-data-table-text-renderer
+                      v-else-if="column.renderer === 'text'"
+                      :data="data"
+                      :column-definition="column"
+                      @click="$emit('open-details', data)"
                     />
-                  </mt-context-button>
-                </td>
-              </tr>
-            </template>
 
-            <template v-else>
-              <div class="mt-data-table__empty-state">
-                <slot name="empty-state">
-                  <mt-empty-state
-                    icon="solid-products"
-                    :headline="t('emptyState.headline')"
-                    :description="t('emptyState.description')"
+                    <mt-data-table-badge-renderer
+                      v-else-if="column.renderer === 'badge'"
+                      :data="data"
+                      :column-definition="column"
+                      @click="$emit('open-details', data)"
+                    />
+
+                    <mt-data-table-price-renderer
+                      v-else-if="column.renderer === 'price'"
+                      :data="data"
+                      :column-definition="column"
+                      @click="$emit('open-details', data)"
+                    />
+                  </template>
+                </td>
+              </template>
+
+              <td
+                v-if="!(disableSettingsTable && disableEdit && disableDelete)"
+                class="mt-data-table__table-context-button"
+              >
+                <a v-if="!disableEdit" href="#" @click.prevent="$emit('open-details', data)">
+                  {{ t("contextButtons.edit") }}
+                </a>
+                <mt-context-button v-if="!(disableDelete && disableEdit)">
+                  <mt-context-menu-item
+                    v-if="!disableEdit"
+                    :label="t('contextButtons.edit')"
+                    @click="$emit('open-details', data)"
                   />
-                </slot>
-              </div>
-            </template>
+
+                  <mt-context-menu-item
+                    v-if="!disableDelete"
+                    type="critical"
+                    :label="t('contextButtons.delete')"
+                    @click="$emit('item-delete', data)"
+                  />
+                </mt-context-button>
+              </td>
+            </tr>
+          </template>
+
+          <template v-else>
+            <div class="mt-data-table__empty-state">
+              <slot name="empty-state">
+                <mt-empty-state
+                  icon="solid-products"
+                  :headline="t('emptyState.headline')"
+                  :description="t('emptyState.description')"
+                />
+              </slot>
+            </div>
+          </template>
           </tbody>
         </table>
       </div>
@@ -553,16 +553,7 @@
 <script lang="ts">
 import useScrollPossibilitiesClasses from "./composables/useScrollPossibilitiesClasses";
 import type { PropType, Ref } from "vue";
-import {
-  defineComponent,
-  computed,
-  onBeforeUpdate,
-  onMounted,
-  onBeforeUnmount,
-  ref,
-  getCurrentInstance,
-  onBeforeMount,
-} from "vue";
+import { defineComponent, computed, onBeforeUpdate, onMounted, onBeforeUnmount, ref } from "vue";
 import MtCard from "../../layout/mt-card/mt-card.vue";
 import MtButton from "../../form/mt-button/mt-button.vue";
 import MtSelect from "../../form/mt-select/mt-select.vue";
@@ -1165,15 +1156,15 @@ export default defineComponent({
      * Handle column resizing
      */
 
-    // save all column and table refs
+      // save all column and table refs
     const dataTable = ref<HTMLElement | null>(null);
     const columnHeaderRefs = ref<Record<string, HTMLElement>>({});
     const columnDataCellRefs = ref<Record<string, HTMLElement[]>>({});
     const setColumnDataCellRefs = ({
-      el,
-      column,
-      index,
-    }: {
+                                     el,
+                                     column,
+                                     index,
+                                   }: {
       el?: HTMLElement;
       column: ColumnDefinition;
       index: number;
@@ -1989,7 +1980,7 @@ $tableCellPaddingRight: 16px;
 $tableCellPaddingBottom: 14px;
 $tableCellPaddingLeft: 16px;
 $tableCellPadding: $tableCellPaddingTop $tableCellPaddingRight $tableCellPaddingBottom
-  $tableCellPaddingLeft;
+$tableCellPaddingLeft;
 
 .mt-data-table {
   display: flex;
@@ -2443,12 +2434,12 @@ $tableCellPadding: $tableCellPaddingTop $tableCellPaddingRight $tableCellPadding
   .mt-data-table__table-head-dropzone-before {
     left: 0;
     box-shadow: inset $dropzone-highlight-width 0px $dropzone-highlight-width
-      $dropzone-highlight-negative-width $color-cicada-brand-900;
+    $dropzone-highlight-negative-width $color-cicada-brand-900;
   }
   .mt-data-table__table-head-dropzone-after {
     right: 0;
     box-shadow: inset $dropzone-highlight-negative-width 0px $dropzone-highlight-width
-      $dropzone-highlight-negative-width $color-cicada-brand-900;
+    $dropzone-highlight-negative-width $color-cicada-brand-900;
   }
 
   /**

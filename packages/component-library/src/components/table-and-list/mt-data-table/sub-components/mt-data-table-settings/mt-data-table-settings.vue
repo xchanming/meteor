@@ -258,10 +258,10 @@ export default defineComponent({
     };
 
     const onColumnChangeOrder = ({
-      itemId,
-      dropZone,
-      dropId,
-    }: {
+                                   itemId,
+                                   dropZone,
+                                   dropId,
+                                 }: {
       itemId?: string;
       dropZone: "before" | "after";
       dropId?: string;
