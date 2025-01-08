@@ -598,12 +598,12 @@ export default defineComponent({
       get():
         | string
         | {
-        string: string;
-        red: string;
-        green: string;
-        blue: string;
-        alpha?: string | undefined;
-      } {
+            string: string;
+            red: string;
+            green: string;
+            blue: string;
+            alpha?: string | undefined;
+          } {
         if (this.alphaValue < 1) {
           return this.convertHSLtoHEX(
             this.hueValue,
@@ -643,12 +643,12 @@ export default defineComponent({
     convertedValue():
       | string
       | {
-      string: string;
-      red: string;
-      green: string;
-      blue: string;
-      alpha?: string;
-    } {
+          string: string;
+          red: string;
+          green: string;
+          blue: string;
+          alpha?: string;
+        } {
       switch (this.colorOutput) {
         case "auto": {
           return this.alphaValue < 1 ? this.rgbValue : this.hexValue;
@@ -1009,12 +1009,12 @@ export default defineComponent({
     ):
       | string
       | {
-      string: string;
-      red: string;
-      green: string;
-      blue: string;
-      alpha?: string | undefined;
-    } {
+          string: string;
+          red: string;
+          green: string;
+          blue: string;
+          alpha?: string | undefined;
+        } {
       const hsla = {
         hue: previousHue,
         saturation: previousSaturation,
@@ -1035,12 +1035,12 @@ export default defineComponent({
       },
     ):
       | {
-      string: string;
-      red: string;
-      green: string;
-      blue: string;
-      alpha?: string;
-    }
+          string: string;
+          red: string;
+          green: string;
+          blue: string;
+          alpha?: string;
+        }
       | string {
       const validModes = ["hex", "rgb"];
       if (!validModes.includes(mode)) {
@@ -1458,8 +1458,8 @@ export default defineComponent({
       border: 1px solid var(--color-border-primary-default);
       border-radius: var(--border-radius-xs);
       background-image: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0) 50%),
-      linear-gradient(0deg, #000, rgba(0, 0, 0, 0) 50%),
-      linear-gradient(90deg, #808080, rgba(128, 128, 128, 0) 100%);
+        linear-gradient(0deg, #000, rgba(0, 0, 0, 0) 50%),
+        linear-gradient(90deg, #808080, rgba(128, 128, 128, 0) 100%);
     }
 
     &-selector {
@@ -1482,14 +1482,14 @@ export default defineComponent({
       height: var(--scale-size-20);
       border-radius: var(--border-radius-xs);
       background-image: linear-gradient(
-          90deg,
-          #f00 0%,
-          #ff0 16.66%,
-          #0f0 33.33%,
-          #0ff 50%,
-          #00f 66.66%,
-          #f0f 83.33%,
-          #f00 100%
+        90deg,
+        #f00 0%,
+        #ff0 16.66%,
+        #0f0 33.33%,
+        #0ff 50%,
+        #00f 66.66%,
+        #f0f 83.33%,
+        #f00 100%
       );
       outline: none;
       -webkit-appearance: none;

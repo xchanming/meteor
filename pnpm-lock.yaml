@@ -184,6 +184,9 @@ importers:
       vue:
         specifier: ^3.5.0
         version: 3.5.0(typescript@5.6.2)
+      vue-i18n:
+        specifier: ^9.9.1
+        version: 9.13.1(vue@3.5.0(typescript@5.6.2))
       vue-router:
         specifier: ^4.3.0
         version: 4.3.3(vue@3.5.0(typescript@5.6.2))
@@ -19753,7 +19756,7 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.11.0(vue@3.5.13(typescript@5.6.2))
       '@vueuse/shared': 10.11.0(vue@3.5.13(typescript@5.6.2))
-      vue-demi: 0.14.8(vue@3.5.13(typescript@5.6.2))
+      vue-demi: 0.14.10(vue@3.5.13(typescript@5.6.2))
     optionalDependencies:
       axios: 1.7.2
       change-case: 4.1.2
@@ -30024,6 +30027,10 @@ snapshots:
     dependencies:
       vue: 3.5.13(typescript@5.2.2)
 
+  vue-demi@0.14.10(vue@3.5.13(typescript@5.6.2)):
+    dependencies:
+      vue: 3.5.13(typescript@5.6.2)
+
   vue-demi@0.14.8(vue@3.5.13(typescript@5.2.2)):
     dependencies:
       vue: 3.5.13(typescript@5.2.2)
@@ -30062,6 +30069,13 @@ snapshots:
       semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
+
+  vue-i18n@9.13.1(vue@3.5.0(typescript@5.6.2)):
+    dependencies:
+      '@intlify/core-base': 9.13.1
+      '@intlify/shared': 9.13.1
+      '@vue/devtools-api': 6.6.3
+      vue: 3.5.0(typescript@5.6.2)
 
   vue-i18n@9.13.1(vue@3.5.13(typescript@5.2.2)):
     dependencies:

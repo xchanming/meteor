@@ -24,9 +24,11 @@ const props = defineProps<{
 
 const errorMessage = computed(() => {
   if (!props.error) return "";
-
+  if (!props.error.code) {
+    return t(props.error.detail);
+  }
   const translation = t(props.error.code, props.error.parameters || {});
-  const noTranslationFound = translation === props.error.code;
+  const noTranslationFound = translation === props.error.code.toString();
 
   return noTranslationFound ? props.error.detail : translation;
 });
