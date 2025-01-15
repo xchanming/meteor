@@ -50,7 +50,7 @@
         :options="visibleResults"
         :is-loading="isLoading"
         :empty-message="t('messageNoResults', { term: searchTerm })"
-        :focus-el="$refs.selectionList.getFocusEl()"
+        :focus-el="getFocusElement()"
         @paginate="$emit('paginate')"
         @item-select="addItem"
       >
@@ -258,10 +258,10 @@ export default defineComponent({
       type: Function,
       required: false,
       default({
-        options,
-        labelProperty,
-        searchTerm,
-      }: {
+                options,
+                labelProperty,
+                searchTerm,
+              }: {
         options: any;
         labelProperty: string;
         searchTerm: string;
@@ -555,6 +555,11 @@ export default defineComponent({
 
     onClearSelection() {
       this.currentValue = [];
+    },
+
+    getFocusElement() {
+      // @ts-expect-error - ref exists
+      return this.$refs.selectionList.getFocusEl() as HTMLElement;
     },
   },
 });

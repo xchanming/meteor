@@ -11,15 +11,15 @@ export function currency(
   const decimalOpts =
     decimalPlaces !== undefined
       ? {
-          minimumFractionDigits: decimalPlaces,
-          maximumFractionDigits: decimalPlaces,
-        }
+        minimumFractionDigits: decimalPlaces,
+        maximumFractionDigits: decimalPlaces,
+      }
       : {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 20,
-        };
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 20,
+      };
 
-  const opts = {
+  const opts: Intl.NumberFormatOptions = {
     style: "currency",
     currency: sign,
     ...decimalOpts,
