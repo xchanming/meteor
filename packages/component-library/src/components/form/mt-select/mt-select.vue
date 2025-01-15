@@ -258,10 +258,10 @@ export default defineComponent({
       type: Function,
       required: false,
       default({
-                options,
-                labelProperty,
-                searchTerm,
-              }: {
+        options,
+        labelProperty,
+        searchTerm,
+      }: {
         options: any;
         labelProperty: string;
         searchTerm: string;
