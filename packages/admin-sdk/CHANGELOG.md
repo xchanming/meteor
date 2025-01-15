@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.6.6
+
+### Patch Changes
+
+- Updated dependencies [8b502dc]
+  - @cicada-ag/meteor-component-library@4.0.1
+
 ## 5.6.5
 
 ### Patch Changes

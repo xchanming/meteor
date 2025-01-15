@@ -1,5 +1,12 @@
 # @cicada-ag/stylelint-plugin-meteor
 
+## 0.1.1
+
+### Patch Changes
+
+- 8d01b22: Fix border rule to allow expressions
+- 8d01b22: Fix stylelint font rule to exclude font-feature-settings
+
 ## 0.1.0
 
 ### Minor Changes
