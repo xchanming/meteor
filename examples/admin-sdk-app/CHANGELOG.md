@@ -1,5 +1,42 @@
 # meteor-admin-sdk-app
 
+## 1.0.23
+
+### Patch Changes
+
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [aef8a2a]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [c347816]
+- Updated dependencies [bd825f1]
+- Updated dependencies [c347816]
+- Updated dependencies [79355ec]
+  - @cicada-ag/meteor-component-library@4.0.0
+  - @cicada-ag/meteor-admin-sdk@5.6.5
+
 ## 1.0.22
 
 ### Patch Changes
