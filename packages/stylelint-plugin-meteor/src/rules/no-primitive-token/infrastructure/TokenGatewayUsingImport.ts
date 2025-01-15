@@ -21,7 +21,7 @@ const extractTokens = (obj: any, path: string[] = []): string[] => {
 export class TokenGatewayUsingImport implements TokenGateway {
   async getTokens(): Promise<string[]> {
     const dictionary = await import(
-      "@cicada-ag/meteor-tokens/foundation/primitives.json",
+      "@shopware-ag/meteor-tokens/foundation/primitives.json",
       { with: { type: "json" } }
     );
 

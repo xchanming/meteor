@@ -26,7 +26,7 @@ testRule({
     {
       code: ".a { font-family: Arial; }",
       message:
-          'Unexpected hard-coded value "Arial" for font-family, please use a typography token (meteor/prefer-font-token)',
+        'Unexpected hard-coded value "Arial" for font-family, please use a typography token (meteor/prefer-font-token)',
       line: 1,
       column: 6,
       endLine: 1,
@@ -35,7 +35,7 @@ testRule({
     {
       code: ".a { font-weight: 700; }",
       message:
-          'Unexpected hard-coded value "700" for font-weight, please use a typography token (meteor/prefer-font-token)',
+        'Unexpected hard-coded value "700" for font-weight, please use a typography token (meteor/prefer-font-token)',
       line: 1,
       column: 6,
       endLine: 1,
@@ -44,7 +44,7 @@ testRule({
     {
       code: ".a { font-size: 16px; }",
       message:
-          'Unexpected hard-coded value "16px" for font-size, please use a typography token (meteor/prefer-font-token)',
+        'Unexpected hard-coded value "16px" for font-size, please use a typography token (meteor/prefer-font-token)',
       line: 1,
       column: 6,
       endLine: 1,
@@ -53,7 +53,7 @@ testRule({
     {
       code: ".a { line-height: 10px; }",
       message:
-          'Unexpected hard-coded value "10px" for line-height, please use a typography token (meteor/prefer-font-token)',
+        'Unexpected hard-coded value "10px" for line-height, please use a typography token (meteor/prefer-font-token)',
       line: 1,
       column: 6,
       endLine: 1,
