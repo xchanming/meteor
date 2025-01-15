@@ -7,7 +7,7 @@ This repository contains the Design Tokens for the Meteor Design System at shopw
 ## Installation
 
 ```sh
-npm install @shopware-ag/meteor-tokens
+npm install @cicada-ag/meteor-tokens
 ```
 
 ## Usage
