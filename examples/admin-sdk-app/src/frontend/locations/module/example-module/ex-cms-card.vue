@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { window } from '@shopware-ag/meteor-admin-sdk';
+import { window } from '@xchanming-ag/meteor-admin-sdk';
 import { SwCard } from '@shopware-ag/meteor-component-library';
 
 function goToCmsModule() {

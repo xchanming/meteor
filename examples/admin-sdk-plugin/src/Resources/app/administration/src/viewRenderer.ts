@@ -1,5 +1,5 @@
 import { createApp, defineAsyncComponent } from "vue";
-import { location } from "@shopware-ag/meteor-admin-sdk";
+import { location } from "@xchanming-ag/meteor-admin-sdk";
 import "@shopware-ag/meteor-component-library/styles.css";
 
 // watch for height changes

@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { window, context } from "@shopware-ag/meteor-admin-sdk";
+import { window, context } from "@xchanming-ag/meteor-admin-sdk";
 import { SwButton } from '@shopware-ag/meteor-component-library';
 
 async function goToExampleModule() {

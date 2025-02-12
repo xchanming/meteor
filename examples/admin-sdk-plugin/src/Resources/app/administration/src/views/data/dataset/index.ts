@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { data } from '@shopware-ag/meteor-admin-sdk';
+import { data } from '@xchanming-ag/meteor-admin-sdk';
 import { SwButton, SwTextField } from "@shopware-ag/meteor-component-library";
 
 

@@ -61,7 +61,7 @@ async function createServer() {
         plugins: [vue()],
         optimizeDeps: {
             include: [
-                '@shopware-ag/meteor-admin-sdk',
+                '@xchanming-ag/meteor-admin-sdk',
                 '@shopware-ag/meteor-component-library'
             ]
         },
