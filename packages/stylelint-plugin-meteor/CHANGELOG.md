@@ -1,4 +1,4 @@
-# @shopware-ag/stylelint-plugin-meteor
+# @xchanming-ag/stylelint-plugin-meteor
 
 ## 0.1.1
 
