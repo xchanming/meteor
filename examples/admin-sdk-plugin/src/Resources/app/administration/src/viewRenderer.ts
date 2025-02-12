@@ -1,6 +1,6 @@
 import { createApp, defineAsyncComponent } from "vue";
 import { location } from "@xchanming-ag/meteor-admin-sdk";
-import "@shopware-ag/meteor-component-library/styles.css";
+import "@xchanming-ag/meteor-component-library/styles.css";
 
 // watch for height changes
 location.startAutoResizer();

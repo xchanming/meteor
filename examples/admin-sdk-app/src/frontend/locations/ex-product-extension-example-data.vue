@@ -48,7 +48,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { notification, data } from "@xchanming-ag/meteor-admin-sdk";
-import { SwButton, SwTextField } from '@shopware-ag/meteor-component-library';
+import { SwButton, SwTextField } from '@xchanming-ag/meteor-component-library';
 
 const product = ref<EntitySchema.Entity<'product'>|undefined|null>(undefined);
 const manufacturer = ref<EntitySchema.Entity<'product_manufacturer'>|undefined|null>(undefined);

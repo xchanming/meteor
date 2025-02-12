@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue';
 import { notification, context, data, window } from '@xchanming-ag/meteor-admin-sdk';
-import { SwButton, SwTextField, SwTextarea } from '@shopware-ag/meteor-component-library';
+import { SwButton, SwTextField, SwTextarea } from '@xchanming-ag/meteor-component-library';
 
 const { repository, Classes: { Criteria } } = data;
 

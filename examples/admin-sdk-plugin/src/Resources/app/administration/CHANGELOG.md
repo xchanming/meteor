@@ -31,7 +31,7 @@
 - Updated dependencies [8405f12]
 - Updated dependencies [3863b64]
 - Updated dependencies [fab1a1d]
-  - @shopware-ag/meteor-component-library@4.1.0
+  - @xchanming-ag/meteor-component-library@4.1.0
   - @xchanming-ag/meteor-admin-sdk@5.7.0
 
 ## 1.0.2
@@ -39,7 +39,7 @@
 ### Patch Changes
 
 - Updated dependencies [f3b0e2f]
-  - @shopware-ag/meteor-component-library@4.0.1
+  - @xchanming-ag/meteor-component-library@4.0.1
   - @xchanming-ag/meteor-admin-sdk@5.6.2
 
 ## 1.0.1
@@ -77,5 +77,5 @@
 - Updated dependencies [850107e]
 - Updated dependencies [50de30f]
 - Updated dependencies [b3039c1]
-  - @shopware-ag/meteor-component-library@4.0.0
+  - @xchanming-ag/meteor-component-library@4.0.0
   - @xchanming-ag/meteor-admin-sdk@5.6.1

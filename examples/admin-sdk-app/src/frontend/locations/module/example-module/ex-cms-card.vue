@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { window } from '@xchanming-ag/meteor-admin-sdk';
-import { SwCard } from '@shopware-ag/meteor-component-library';
+import { SwCard } from '@xchanming-ag/meteor-component-library';
 
 function goToCmsModule() {
   window.routerPush({

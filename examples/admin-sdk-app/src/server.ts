@@ -62,7 +62,7 @@ async function createServer() {
         optimizeDeps: {
             include: [
                 '@xchanming-ag/meteor-admin-sdk',
-                '@shopware-ag/meteor-component-library'
+                '@xchanming-ag/meteor-component-library'
             ]
         },
     })

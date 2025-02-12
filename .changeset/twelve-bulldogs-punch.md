@@ -1,5 +1,5 @@
 ---
-"@shopware-ag/meteor-component-library": patch
+"@xchanming-ag/meteor-component-library": patch
 ---
 
 Stop announcing tooltip triangle to screen readers

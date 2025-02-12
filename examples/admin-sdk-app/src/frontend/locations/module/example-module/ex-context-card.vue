@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { context, notification } from '@xchanming-ag/meteor-admin-sdk';
-import { SwCard, SwButton } from '@shopware-ag/meteor-component-library';
+import { SwCard, SwButton } from '@xchanming-ag/meteor-component-library';
 
 async function getCurrentLanguage() {
   const currentLanguage = await context.getLanguage();
