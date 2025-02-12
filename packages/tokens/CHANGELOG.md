@@ -1,4 +1,4 @@
-# @shopware-ag/meteor-tokens
+# @xchanming-ag/meteor-tokens
 
 ## 0.3.0
 

@@ -67,15 +67,15 @@ importers:
       '@shopware-ag/entity-schema-types':
         specifier: ^5.8.6
         version: 5.8.11
-      '@shopware-ag/meteor-admin-sdk':
-        specifier: workspace:*
-        version: link:../../packages/admin-sdk
-      '@shopware-ag/meteor-component-library':
-        specifier: workspace:*
-        version: link:../../packages/component-library
       '@vitejs/plugin-vue':
         specifier: ^4.6.2
         version: 4.6.2(vite@5.3.1(@types/node@18.19.36)(sass@1.77.6)(terser@5.31.1))(vue@3.5.13(typescript@5.4.5))
+      '@xchanming-ag/meteor-admin-sdk':
+        specifier: workspace:*
+        version: link:../../packages/admin-sdk
+      '@xchanming-ag/meteor-component-library':
+        specifier: workspace:*
+        version: link:../../packages/component-library
       express:
         specifier: ^4.18.2
         version: 4.19.2
@@ -125,10 +125,10 @@ importers:
 
   examples/admin-sdk-plugin/src/Resources/app/administration:
     dependencies:
-      '@shopware-ag/meteor-admin-sdk':
+      '@xchanming-ag/meteor-admin-sdk':
         specifier: workspace:*
         version: link:../../../../../../packages/admin-sdk
-      '@shopware-ag/meteor-component-library':
+      '@xchanming-ag/meteor-component-library':
         specifier: workspace:*
         version: link:../../../../../../packages/component-library
       regenerator-runtime:
@@ -175,7 +175,7 @@ importers:
 
   examples/nuxt-app:
     dependencies:
-      '@shopware-ag/meteor-component-library':
+      '@xchanming-ag/meteor-component-library':
         specifier: workspace:*
         version: link:../../packages/component-library
       nuxt:
@@ -200,7 +200,7 @@ importers:
 
   packages/admin-sdk:
     dependencies:
-      '@shopware-ag/meteor-component-library':
+      '@xchanming-ag/meteor-component-library':
         specifier: workspace:*
         version: link:../component-library
       localforage:
@@ -291,12 +291,6 @@ importers:
       '@floating-ui/vue':
         specifier: ^1.1.5
         version: 1.1.5(vue@3.5.13(typescript@5.7.3))
-      '@shopware-ag/meteor-icon-kit':
-        specifier: workspace:*
-        version: link:../icon-kit
-      '@shopware-ag/meteor-tokens':
-        specifier: workspace:*
-        version: link:../tokens
       '@storybook/addon-a11y':
         specifier: ^8.4.5
         version: 8.4.6(storybook@8.4.6(prettier@3.2.5))
@@ -378,6 +372,12 @@ importers:
       '@vueuse/core':
         specifier: ^12.4.0
         version: 12.4.0(typescript@5.7.3)
+      '@xchanming-ag/meteor-icon-kit':
+        specifier: workspace:*
+        version: link:../icon-kit
+      '@xchanming-ag/meteor-tokens':
+        specifier: workspace:*
+        version: link:../tokens
       codemirror:
         specifier: ^6.0.1
         version: 6.0.1(@lezer/common@1.2.3)
@@ -412,9 +412,6 @@ importers:
       '@rushstack/eslint-patch':
         specifier: ^1.3.3
         version: 1.10.3
-      '@shopware-ag/stylelint-plugin-meteor':
-        specifier: workspace:*
-        version: link:../stylelint-plugin-meteor
       '@storybook/addon-essentials':
         specifier: ^8.4.5
         version: 8.4.6(@types/react@18.3.3)(storybook@8.4.6(prettier@3.2.5))
@@ -478,6 +475,9 @@ importers:
       '@vue/tsconfig':
         specifier: ^0.4.0
         version: 0.4.0
+      '@xchanming-ag/stylelint-plugin-meteor':
+        specifier: workspace:*
+        version: link:../stylelint-plugin-meteor
       eslint:
         specifier: ^8.49.0
         version: 8.57.0
@@ -626,7 +626,7 @@ importers:
 
   packages/stylelint-plugin-meteor:
     dependencies:
-      '@shopware-ag/meteor-tokens':
+      '@xchanming-ag/meteor-tokens':
         specifier: workspace:*
         version: link:../tokens
       stylelint:
@@ -17083,7 +17083,7 @@ snapshots:
       rc9: 2.1.2
       semver: 7.6.2
 
-  '@nuxt/devtools@1.3.3(5905c37a0ab123defc9abd51d7cd6ed8)':
+  '@nuxt/devtools@1.3.3(qp3ann6fzaegwpx42lfnuxbgim)':
     dependencies:
       '@antfu/utils': 0.7.8
       '@nuxt/devtools-kit': 1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.5)(@unocss/reset@0.61.0)(axios@1.7.2)(change-case@4.1.2)(encoding@0.1.13)(eslint@8.57.0)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.5.0(typescript@5.7.3)))(ioredis@5.4.1)(magicast@0.3.4)(nprogress@0.2.0)(optionator@0.9.4)(rollup@4.18.0)(sass@1.77.6)(stylelint@16.10.0(typescript@5.7.3))(terser@5.31.1)(typescript@5.7.3)(unocss@0.61.0(postcss@8.4.49)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1))(vue-tsc@2.2.0(typescript@5.7.3)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1))
@@ -26243,7 +26243,7 @@ snapshots:
   nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.5)(@unocss/reset@0.61.0)(axios@1.7.2)(change-case@4.1.2)(encoding@0.1.13)(eslint@8.57.0)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.5.0(typescript@5.7.3)))(ioredis@5.4.1)(magicast@0.3.4)(nprogress@0.2.0)(optionator@0.9.4)(rollup@4.18.0)(sass@1.77.6)(stylelint@16.10.0(typescript@5.7.3))(terser@5.31.1)(typescript@5.7.3)(unocss@0.61.0(postcss@8.4.49)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1))(vue-tsc@2.2.0(typescript@5.7.3)):
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.3.3(5905c37a0ab123defc9abd51d7cd6ed8)
+      '@nuxt/devtools': 1.3.3(qp3ann6fzaegwpx42lfnuxbgim)
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@nuxt/schema': 3.12.2(rollup@4.18.0)
       '@nuxt/telemetry': 2.5.4(magicast@0.3.4)(rollup@4.18.0)

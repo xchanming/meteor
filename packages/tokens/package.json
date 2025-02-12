@@ -1,10 +1,10 @@
 {
-  "name": "@shopware-ag/meteor-tokens",
+  "name": "@xchanming-ag/meteor-tokens",
   "version": "0.3.0",
   "description": "Design Tokens for the Meteor Design System used at shopware",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:shopware/meteor.git"
+    "url": "git+ssh://git@github.com:xchanming/meteor.git"
   },
   "license": "MIT",
   "author": "shopware AG",
