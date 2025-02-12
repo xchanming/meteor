@@ -1,10 +1,4 @@
   # meteor-admin-sdk
-[![Tests](https://github.com/shopware/meteor-admin-sdk/actions/workflows/tests.yml/badge.svg)](https://github.com/shopware/meteor-admin-sdk/actions/workflows/tests.yml)
-[![NPM Package](https://img.shields.io/npm/v/@xchanming-ag/meteor-admin-sdk)](https://www.npmjs.com/package/@xchanming-ag/meteor-admin-sdk)
-
-The `meteor-admin-sdk` is a JavaScript library for all [Shopware 6](https://github.com/shopware/platform) App and Plugin developer which want an easy way to extend and customize the administration.
-
-[See Documentation](https://shopware.github.io/meteor-admin-sdk/)
 
 ## Installation
 #### Using NPM:
