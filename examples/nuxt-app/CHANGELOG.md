@@ -30,14 +30,14 @@
 - Updated dependencies [8405f12]
 - Updated dependencies [3863b64]
 - Updated dependencies [fab1a1d]
-  - @shopware-ag/meteor-component-library@4.1.0
+  - @xchanming-ag/meteor-component-library@4.1.0
 
 ## 0.0.17
 
 ### Patch Changes
 
 - Updated dependencies [f3b0e2f]
-  - @shopware-ag/meteor-component-library@4.0.1
+  - @xchanming-ag/meteor-component-library@4.0.1
 
 ## 0.0.16
 
@@ -74,7 +74,7 @@
 - Updated dependencies [850107e]
 - Updated dependencies [50de30f]
 - Updated dependencies [b3039c1]
-  - @shopware-ag/meteor-component-library@4.0.0
+  - @xchanming-ag/meteor-component-library@4.0.0
 
 ## 0.0.15
 
@@ -89,7 +89,7 @@
 - Updated dependencies [936ccf3]
 - Updated dependencies [2f0a666]
 - Updated dependencies [07e243a]
-  - @shopware-ag/meteor-component-library@3.14.0
+  - @xchanming-ag/meteor-component-library@3.14.0
 
 ## 0.0.14
 
@@ -107,7 +107,7 @@
 - Updated dependencies [17bca01]
 - Updated dependencies [c43799c]
 - Updated dependencies [79f0b40]
-  - @shopware-ag/meteor-component-library@3.13.0
+  - @xchanming-ag/meteor-component-library@3.13.0
 
 ## 0.0.13
 
@@ -131,21 +131,21 @@
 - Updated dependencies [8045090]
 - Updated dependencies [ebe7a33]
 - Updated dependencies [bebea2e]
-  - @shopware-ag/meteor-component-library@3.12.0
+  - @xchanming-ag/meteor-component-library@3.12.0
 
 ## 0.0.12
 
 ### Patch Changes
 
 - Updated dependencies [1319ae3]
-  - @shopware-ag/meteor-component-library@3.11.0
+  - @xchanming-ag/meteor-component-library@3.11.0
 
 ## 0.0.11
 
 ### Patch Changes
 
 - Updated dependencies [4c8d610]
-  - @shopware-ag/meteor-component-library@3.10.0
+  - @xchanming-ag/meteor-component-library@3.10.0
 
 ## 0.0.10
 
@@ -155,7 +155,7 @@
 - Updated dependencies [8c74a37]
 - Updated dependencies [573953b]
 - Updated dependencies [0ee7820]
-  - @shopware-ag/meteor-component-library@3.9.0
+  - @xchanming-ag/meteor-component-library@3.9.0
 
 ## 0.0.9
 
@@ -168,7 +168,7 @@
 - Updated dependencies [cdb9eda]
 - Updated dependencies [8182c77]
 - Updated dependencies [3eb91a0]
-  - @shopware-ag/meteor-component-library@3.8.2
+  - @xchanming-ag/meteor-component-library@3.8.2
 
 ## 0.0.8
 
@@ -177,7 +177,7 @@
 - Updated dependencies [def10ee]
 - Updated dependencies [81f8d4c]
 - Updated dependencies [d60aad5]
-  - @shopware-ag/meteor-component-library@3.8.1
+  - @xchanming-ag/meteor-component-library@3.8.1
 
 ## 0.0.7
 
@@ -195,7 +195,7 @@
 - Updated dependencies [19bba6e]
 - Updated dependencies [16be216]
 - Updated dependencies [2b13b0b]
-  - @shopware-ag/meteor-component-library@3.8.0
+  - @xchanming-ag/meteor-component-library@3.8.0
 
 ## 0.0.6
 
@@ -209,7 +209,7 @@
 - Updated dependencies [b9b4005]
 - Updated dependencies [fbe8152]
 - Updated dependencies [d9f7c3e]
-  - @shopware-ag/meteor-component-library@3.7.0
+  - @xchanming-ag/meteor-component-library@3.7.0
 
 ## 0.0.5
 
@@ -219,14 +219,14 @@
 - Updated dependencies [b54d88c]
 - Updated dependencies [321a830]
 - Updated dependencies [3b22c7a]
-  - @shopware-ag/meteor-component-library@3.6.0
+  - @xchanming-ag/meteor-component-library@3.6.0
 
 ## 0.0.4
 
 ### Patch Changes
 
 - Updated dependencies [b68fa55]
-  - @shopware-ag/meteor-component-library@3.5.1
+  - @xchanming-ag/meteor-component-library@3.5.1
 
 ## 0.0.3
 
@@ -234,7 +234,7 @@
 
 - Updated dependencies [85942a2]
 - Updated dependencies [95cdb1f]
-  - @shopware-ag/meteor-component-library@3.5.0
+  - @xchanming-ag/meteor-component-library@3.5.0
 
 ## 0.0.2
 
@@ -242,7 +242,7 @@
 
 - Updated dependencies [7ff2788]
 - Updated dependencies [97ba4d8]
-  - @shopware-ag/meteor-component-library@3.4.0
+  - @xchanming-ag/meteor-component-library@3.4.0
 
 ## null
 
@@ -252,21 +252,21 @@
 - Updated dependencies [f0655bf]
 - Updated dependencies [0ba5c91]
 - Updated dependencies [856489b]
-  - @shopware-ag/meteor-component-library@3.3.0
+  - @xchanming-ag/meteor-component-library@3.3.0
 
 ## null
 
 ### Patch Changes
 
 - Updated dependencies [e0e1741]
-  - @shopware-ag/meteor-component-library@3.2.0
+  - @xchanming-ag/meteor-component-library@3.2.0
 
 ## null
 
 ### Patch Changes
 
 - Updated dependencies [6c6678d]
-  - @shopware-ag/meteor-component-library@3.1.0
+  - @xchanming-ag/meteor-component-library@3.1.0
 
 ## null
 
@@ -274,4 +274,4 @@
 
 - Updated dependencies [bff12c5]
 - Updated dependencies [8a9066a]
-  - @shopware-ag/meteor-component-library@3.0.0
+  - @xchanming-ag/meteor-component-library@3.0.0
