@@ -2,4 +2,4 @@
 "@xchanming-ag/meteor-component-library": patch
 ---
 
-Add types for slots for mt-url-field
+Fix alignment of help-text in mt-textarea component

@@ -1,6 +1,6 @@
 {
   "name": "@xchanming-ag/meteor-component-library",
-  "version": "4.1.0",
+  "version": "4.3.0",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:xchanming/meteor.git"
@@ -36,7 +36,8 @@
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
-    "test:storybook": "test-storybook"
+    "test:storybook": "test-storybook",
+    "prepublish": "npm run build-only"
   },
   "dependencies": {
     "@codemirror/lang-html": "^6.4.9",
@@ -45,7 +46,7 @@
     "@xchanming-ag/meteor-icon-kit": "workspace:*",
     "@xchanming-ag/meteor-tokens": "workspace:*",
     "@storybook/addon-a11y": "^8.4.5",
-    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/vue": "^8.1.0",
     "@tiptap/extension-bubble-menu": "^2.10.0",
     "@tiptap/extension-bullet-list": "^2.10.0",
