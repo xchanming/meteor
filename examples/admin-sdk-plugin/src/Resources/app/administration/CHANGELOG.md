@@ -1,5 +1,13 @@
 # administration
 
+## 1.0.6
+
+### Patch Changes
+
+- Updated dependencies [f251c89]
+  - @xchanming-ag/meteor-component-library@4.3.1
+  - @xchanming-ag/meteor-admin-sdk@5.7.3
+
 ## 1.0.5
 
 ### Patch Changes
