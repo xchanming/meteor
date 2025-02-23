@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.7.3
+
+### Patch Changes
+
+- Updated dependencies [f251c89]
+  - @xchanming-ag/meteor-component-library@4.3.1
+
 ## 5.7.2
 
 ### Patch Changes
