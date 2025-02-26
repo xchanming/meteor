@@ -58,7 +58,7 @@
     <template v-if="isTimeHintVisible">
       <div class="field-hint" data-test="time-zone-hint" :style="{ gridArea: 'hint' }">
         <mt-icon name="solid-clock" class="field-hint-icon" />
-        <p>{{ timeZone || "UTC" }}</p>
+        <p>{{ timeZone || "Asia/Shanghai" }}</p>
       </div>
     </template>
   </div>
@@ -118,7 +118,7 @@ export default defineComponent({
     timeZone: {
       type: String as PropType<string>,
       required: false,
-      default: "UTC",
+      default: "Asia/Shanghai",
     },
 
     /**
@@ -204,7 +204,7 @@ export default defineComponent({
           return;
         }
 
-        // Handle 'datetime' type: Convert to UTC
+        // Handle 'datetime' type: Convert to Asia/Shanghai
         const isoValue = this.convertDateToIso(newValue);
         this.$emit("update:modelValue", isoValue);
       },
