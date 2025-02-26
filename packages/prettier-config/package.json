@@ -1,5 +1,5 @@
 {
-  "name": "@shopware-ag/meteor-prettier-config",
+  "name": "@xchanming-ag/meteor-prettier-config",
   "version": "1.0.0",
   "description": "Prettier configuration for Shopware projects",
   "type": "module",
