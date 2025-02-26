@@ -19,10 +19,11 @@ Add this package to your project:
 npm i @xchanming-ag/meteor-component-library
 ```
 
-Import the `style.css` for general styling like fonts, etc. in the root file of your application or in you root styling file.
+Import the `style.css` for general styling and `font.css` for the Inter font in the root file of your application or in you root styling file.
 
 ```js
-import "@xchanming-ag/meteor-component-library/dist/style.css";
+import "@xchanming-ag/meteor-component-library/style.css";
+import "@xchanming-ag/meteot-component-library/font.css";
 ```
 
 Each component works independently and can be imported directly from the root like this:
