@@ -1,5 +1,5 @@
 ---
-"@shopware-ag/meteor-component-library": minor
+"@xchanming-ag/meteor-component-library": minor
 ---
 
 Fix single select truncation
