@@ -2,4 +2,4 @@
 "@shopware-ag/meteor-component-library": patch
 ---
 
-Allow setting a margin on an `mt-button` component
+Set default max-width of tooltips to 240px

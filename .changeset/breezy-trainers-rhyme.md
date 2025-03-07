@@ -2,4 +2,4 @@
 "@shopware-ag/meteor-component-library": patch
 ---
 
-fix: update wrong position of mt-select popover
+Allow setting the max width of helptexts
