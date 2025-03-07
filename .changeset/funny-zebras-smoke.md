@@ -1,5 +1,5 @@
 ---
-"@shopware-ag/meteor-component-library": minor
+"@xchanming-ag/meteor-component-library": minor
 ---
 
 Allow setting the max width of a tooltip
