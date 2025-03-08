@@ -90,12 +90,12 @@ const { t } = useI18n({
       nextPage: "Next page",
       lastPage: "Last page",
     },
-    de: {
-      infoText: "{start}-{end} von {totalItems}",
-      firstPage: "Erste Seite",
-      previousPage: "Voherige Seite",
-      nextPage: "Nächste Seite",
-      lastPage: "Letzte Seite",
+    zh: {
+      infoText: "{start}-{end} 共 {totalItems}",
+      firstPage: "第一页",
+      previousPage: "上一页",
+      nextPage: "下一页",
+      lastPage: "最后一页",
     },
   },
 });

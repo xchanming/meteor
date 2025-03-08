@@ -180,10 +180,10 @@ const { t } = useI18n({
       copyButtonDescription: "In Zwischenablage kopieren",
       copyButtonDescriptionValueCopied: "In Zwischenablage kopiert",
     },
-    en: {
-      copyTooltip: "Copy to clipboard",
-      copyButtonDescription: "Copy to clipboard",
-      copyButtonDescriptionValueCopied: "Copied to clipboard",
+    zh: {
+      copyTooltip: "复制到剪贴板",
+      copyButtonDescription: "复制到剪贴板",
+      copyButtonDescriptionValueCopied: "已复制到剪贴板",
     },
   },
 });

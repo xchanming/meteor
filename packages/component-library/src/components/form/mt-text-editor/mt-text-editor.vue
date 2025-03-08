@@ -177,13 +177,13 @@ const { t } = useI18n({
         },
       },
     },
-    de: {
+    zh: {
       "mt-text-editor": {
         buttons: {
-          "toggle-code": "Codeansicht umschalten",
+          "toggle-code": "显示代码",
         },
         footer: {
-          characters: "{characters} Zeichen",
+          characters: "{characters} 个字符",
         },
       },
     },
