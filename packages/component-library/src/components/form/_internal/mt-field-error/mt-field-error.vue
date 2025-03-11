@@ -60,13 +60,11 @@ const { t } = useI18n({
         FRAMEWORK__DELETE_RESTRICTED: "删除失败",
         INVALID_MEDIA_URL: "请输入有效的 URL 以上传文件。",
         CONTENT__MISSING_RULE_TYPE_EXCEPTION: "你必须为此规则选择一个类型。",
-        CONTENT__INVALID_CATEGORY_TYPE_AS_ENTRY_POINT:
-          "当该类别被设置为入口点时，无法选择此类型。",
+        CONTENT__INVALID_CATEGORY_TYPE_AS_ENTRY_POINT: "当该类别被设置为入口点时，无法选择此类型。",
         SHOPWARE_INVALID_IP: "请输入有效的 IP 地址。",
         INVALID_URL: "请输入有效的 URL。",
         INVALID_MAIL: "请输入有效的电子邮件地址。",
-        FRAMEWORK__RATE_LIMIT_EXCEEDED:
-          "请求过多。请等待 {seconds} 秒后再试。",
+        FRAMEWORK__RATE_LIMIT_EXCEEDED: "请求过多。请等待 {seconds} 秒后再试。",
         DUPLICATED_URL: "该 URL 已被使用。请选择其他域名。",
         "c1051bb4-d103-4f74-8988-acbcafc7fdc3": "此字段不能为空。",
       },
