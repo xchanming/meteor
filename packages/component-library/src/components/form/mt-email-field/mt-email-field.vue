@@ -175,10 +175,10 @@ const { copy, copied } = useClipboard();
 
 const { t } = useI18n({
   messages: {
-    de: {
-      copyTooltip: "In Zwischenablage kopieren",
-      copyButtonDescription: "In Zwischenablage kopieren",
-      copyButtonDescriptionValueCopied: "In Zwischenablage kopiert",
+    en: {
+      copyTooltip: "Copy to clipboard",
+      copyButtonDescription: "Copy to clipboard",
+      copyButtonDescriptionValueCopied: "Copied to clipboard",
     },
     zh: {
       copyTooltip: "复制到剪贴板",
