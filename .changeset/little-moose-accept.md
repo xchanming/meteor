@@ -1,5 +1,5 @@
 ---
-"@shopware-ag/meteor-admin-sdk": minor
+"@xchanming-ag/meteor-admin-sdk": minor
 ---
 
 - Changed name of `context.compareShopwareVersion` to `context.compareIsShopwareVersion` 
