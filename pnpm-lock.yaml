@@ -209,6 +209,9 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+      semver:
+        specifier: ^7.7.1
+        version: 7.7.1
     devDependencies:
       '@playwright/test':
         specifier: ^1.45.0
@@ -13551,8 +13554,8 @@ packages:
   vue-component-type-helpers@2.0.21:
     resolution: {integrity: sha512-3NaicyZ7N4B6cft4bfb7dOnPbE9CjLcx+6wZWAg5zwszfO4qXRh+U52dN5r5ZZfc6iMaxKCEcoH9CmxxoFZHLg==}
 
-  vue-component-type-helpers@2.2.8:
-    resolution: {integrity: sha512-4bjIsC284coDO9om4HPA62M7wfsTvcmZyzdfR0aUlFXqq4tXxM1APyXpNVxPC8QazKw9OhmZNHBVDA6ODaZsrA==}
+  vue-component-type-helpers@3.0.0-alpha.2:
+    resolution: {integrity: sha512-dv9YzsuJFLnpRNxKU0exwIlCIA/v+rXrgCsEtaENsFJLPFMw1Sr4IRctilwfjnjCzoJGgGACHRZfxo6ZwlH2fQ==}
 
   vue-demi@0.14.10:
     resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
@@ -15173,7 +15176,7 @@ snapshots:
       outdent: 0.5.0
       prettier: 2.8.8
       resolve-from: 5.0.0
-      semver: 7.6.2
+      semver: 7.7.1
 
   '@changesets/assemble-release-plan@6.0.2':
     dependencies:
@@ -15183,7 +15186,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.0
       '@changesets/types': 6.0.0
       '@manypkg/get-packages': 1.1.3
-      semver: 7.6.2
+      semver: 7.7.1
 
   '@changesets/changelog-git@0.2.0':
     dependencies:
@@ -15220,7 +15223,7 @@ snapshots:
       p-limit: 2.3.0
       preferred-pm: 3.1.3
       resolve-from: 5.0.0
-      semver: 7.6.2
+      semver: 7.7.1
       spawndamnit: 2.0.0
       term-size: 2.2.1
       tty-table: 4.2.3
@@ -15245,7 +15248,7 @@ snapshots:
       '@manypkg/get-packages': 1.1.3
       chalk: 2.4.2
       fs-extra: 7.0.1
-      semver: 7.6.2
+      semver: 7.7.1
 
   '@changesets/get-release-plan@4.0.2':
     dependencies:
@@ -17237,7 +17240,7 @@ snapshots:
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.6.2
+      semver: 7.7.1
       tar: 6.2.1
     transitivePeerDependencies:
       - encoding
@@ -17369,7 +17372,7 @@ snapshots:
 
   '@npmcli/fs@3.1.1':
     dependencies:
-      semver: 7.6.2
+      semver: 7.7.1
 
   '@npmcli/git@5.0.7':
     dependencies:
@@ -17379,7 +17382,7 @@ snapshots:
       proc-log: 4.2.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.6.2
+      semver: 7.7.1
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -17399,7 +17402,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.1
       proc-log: 4.2.0
-      semver: 7.6.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - bluebird
 
@@ -17446,7 +17449,7 @@ snapshots:
       pkg-types: 1.1.1
       prompts: 2.4.2
       rc9: 2.1.2
-      semver: 7.6.2
+      semver: 7.7.1
 
   '@nuxt/devtools@1.3.3(x4x7cu2pioly6rgwobkescakv4)':
     dependencies:
@@ -17481,7 +17484,7 @@ snapshots:
       pkg-types: 1.1.1
       rc9: 2.1.2
       scule: 1.3.0
-      semver: 7.6.2
+      semver: 7.7.1
       simple-git: 3.25.0
       sirv: 2.0.4
       unimport: 3.7.2(rollup@4.18.0)
@@ -17530,7 +17533,7 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.1.1
       scule: 1.3.0
-      semver: 7.6.2
+      semver: 7.7.1
       ufo: 1.5.3
       unctx: 2.3.1
       unimport: 3.7.2(rollup@4.18.0)
@@ -18272,7 +18275,7 @@ snapshots:
       prettier-fallback: prettier@3.5.2
       pretty-hrtime: 1.0.3
       resolve-from: 5.0.0
-      semver: 7.6.2
+      semver: 7.7.1
       tempy: 3.1.0
       tiny-invariant: 1.3.3
       ts-dedent: 2.2.0
@@ -18298,7 +18301,7 @@ snapshots:
       jsdoc-type-pratt-parser: 4.1.0
       process: 0.11.10
       recast: 0.23.9
-      semver: 7.6.2
+      semver: 7.7.1
       util: 0.12.5
       ws: 8.17.1
     optionalDependencies:
@@ -18444,7 +18447,7 @@ snapshots:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.5.13(typescript@5.7.3)
-      vue-component-type-helpers: 2.2.8
+      vue-component-type-helpers: 3.0.0-alpha.2
 
   '@supercharge/promise-pool@2.4.0': {}
 
@@ -19294,7 +19297,7 @@ snapshots:
       graphemer: 1.4.0
       ignore: 5.3.1
       natural-compare-lite: 1.4.0
-      semver: 7.6.2
+      semver: 7.7.1
       tsutils: 3.21.0(typescript@4.9.5)
     optionalDependencies:
       typescript: 4.9.5
@@ -19435,7 +19438,7 @@ snapshots:
       debug: 4.4.0
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.2
+      semver: 7.7.1
       tsutils: 3.21.0(typescript@3.9.10)
     optionalDependencies:
       typescript: 3.9.10
@@ -19449,7 +19452,7 @@ snapshots:
       debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.2
+      semver: 7.7.1
       tsutils: 3.21.0(typescript@4.9.5)
     optionalDependencies:
       typescript: 4.9.5
@@ -19464,7 +19467,7 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.6.2
+      semver: 7.7.1
       ts-api-utils: 1.3.0(typescript@5.7.3)
     optionalDependencies:
       typescript: 5.7.3
@@ -19479,7 +19482,7 @@ snapshots:
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.6.2
+      semver: 7.7.1
       ts-api-utils: 2.0.1(typescript@5.4.5)
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -19493,7 +19496,7 @@ snapshots:
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.6.2
+      semver: 7.7.1
       ts-api-utils: 2.0.1(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -19509,7 +19512,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@4.9.5)
       eslint: 8.57.0
       eslint-scope: 5.1.1
-      semver: 7.6.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -21743,7 +21746,7 @@ snapshots:
       postcss-modules-scope: 3.2.0(postcss@8.4.49)
       postcss-modules-values: 4.0.0(postcss@8.4.49)
       postcss-value-parser: 4.2.0
-      semver: 7.6.2
+      semver: 7.7.1
     optionalDependencies:
       webpack: 5.92.0
 
@@ -22413,7 +22416,7 @@ snapshots:
       '@one-ini/wasm': 0.1.1
       commander: 10.0.1
       minimatch: 9.0.1
-      semver: 7.6.2
+      semver: 7.7.1
 
   ee-first@1.1.1: {}
 
@@ -23465,7 +23468,7 @@ snapshots:
       memfs: 3.5.3
       minimatch: 3.1.2
       schema-utils: 2.7.0
-      semver: 7.6.2
+      semver: 7.7.1
       tapable: 1.1.3
       typescript: 4.9.5
       webpack: 5.92.0
@@ -24616,7 +24619,7 @@ snapshots:
       '@babel/parser': 7.26.3
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.6.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - supports-color
 
@@ -25263,7 +25266,7 @@ snapshots:
       jest-util: 27.5.1
       natural-compare: 1.4.0
       pretty-format: 27.5.1
-      semver: 7.6.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - supports-color
 
@@ -25288,7 +25291,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.6.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - supports-color
 
@@ -25837,7 +25840,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.2
+      semver: 7.7.1
 
   make-error@1.3.6: {}
 
@@ -26403,7 +26406,7 @@ snapshots:
       rollup: 4.18.0
       rollup-plugin-visualizer: 5.12.0(rollup@4.18.0)
       scule: 1.3.0
-      semver: 7.6.2
+      semver: 7.7.1
       serve-placeholder: 2.0.2
       serve-static: 1.15.0
       std-env: 3.7.0
@@ -26472,7 +26475,7 @@ snapshots:
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
       proc-log: 3.0.0
-      semver: 7.6.2
+      semver: 7.7.1
       tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -26522,7 +26525,7 @@ snapshots:
     dependencies:
       hosted-git-info: 7.0.2
       is-core-module: 2.13.1
-      semver: 7.6.2
+      semver: 7.7.1
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -26539,7 +26542,7 @@ snapshots:
 
   npm-install-checks@6.3.0:
     dependencies:
-      semver: 7.6.2
+      semver: 7.7.1
 
   npm-normalize-package-bin@3.0.1: {}
 
@@ -26547,7 +26550,7 @@ snapshots:
     dependencies:
       hosted-git-info: 7.0.2
       proc-log: 4.2.0
-      semver: 7.6.2
+      semver: 7.7.1
       validate-npm-package-name: 5.0.1
 
   npm-packlist@8.0.2:
@@ -26559,7 +26562,7 @@ snapshots:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 11.0.2
-      semver: 7.6.2
+      semver: 7.7.1
 
   npm-registry-fetch@17.1.0:
     dependencies:
@@ -27344,7 +27347,7 @@ snapshots:
       cosmiconfig: 8.3.6(typescript@4.9.5)
       jiti: 1.21.6
       postcss: 8.4.38
-      semver: 7.6.2
+      semver: 7.7.1
       webpack: 5.92.0
     transitivePeerDependencies:
       - typescript
@@ -29755,7 +29758,7 @@ snapshots:
       json5: 2.2.3
       lodash.memoize: 4.1.2
       make-error: 1.3.6
-      semver: 7.6.2
+      semver: 7.7.1
       typescript: 4.9.5
       yargs-parser: 20.2.9
     optionalDependencies:
@@ -30364,7 +30367,7 @@ snapshots:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.6.2
+      semver: 7.7.1
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
 
@@ -30562,7 +30565,7 @@ snapshots:
       fast-glob: 3.3.2
       fs-extra: 11.2.0
       npm-run-path: 4.0.1
-      semver: 7.6.2
+      semver: 7.7.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
       vite: 5.3.1(@types/node@20.14.5)(sass@1.77.6)(terser@5.31.1)
@@ -30780,7 +30783,7 @@ snapshots:
   vscode-languageclient@7.0.0:
     dependencies:
       minimatch: 3.1.2
-      semver: 7.6.2
+      semver: 7.7.1
       vscode-languageserver-protocol: 3.16.0
 
   vscode-languageserver-protocol@3.16.0:
@@ -30828,7 +30831,7 @@ snapshots:
 
   vue-component-type-helpers@2.0.21: {}
 
-  vue-component-type-helpers@2.2.8: {}
+  vue-component-type-helpers@3.0.0-alpha.2: {}
 
   vue-demi@0.14.10(vue@3.5.13(typescript@5.7.3)):
     dependencies:
