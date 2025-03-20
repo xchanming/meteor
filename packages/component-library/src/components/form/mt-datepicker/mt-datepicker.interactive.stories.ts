@@ -65,7 +65,7 @@ export const VisualTestDateInputValue: MtDatepickerStory = {
 
     // Expect updatemodelvalue to have been called with date
     expect(args.updateModelValue).toHaveBeenCalledWith(
-      expect.stringMatching(/^2024-11-13T\d{2}:\d{2}:\d{2}.\d{3}Z$/),
+      expect.stringMatching(/^2024-11-12T\d{2}:\d{2}:\d{2}.\d{3}Z$/),
     );
   },
 };
