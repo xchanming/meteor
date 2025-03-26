@@ -108,6 +108,15 @@ export default defineComponent({
     },
 
     /**
+     * Determines if the field is inherited.
+     */
+    isInherited: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+
+    /**
      * Error object for this field.
      */
     error: {
@@ -433,6 +442,10 @@ export default defineComponent({
     &.checkbox-bordered {
       margin-bottom: var(--scale-size-8);
     }
+  }
+
+  & .mt-block-field__block {
+    min-height: unset;
   }
 }
 </style>
