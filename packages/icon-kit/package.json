@@ -35,7 +35,7 @@
     "format:check": "prettier --check .",
     "test:unit": "vitest"
   },
-  "prettier": "@shopware-ag/meteor-prettier-config",
+  "prettier": "@xchanming-ag/meteor-prettier-config",
   "dependencies": {
     "@t3-oss/env-core": "^0.12.0",
     "dotenv": "^16.4.1",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
-    "@shopware-ag/meteor-prettier-config": "workspace:*",
+    "@xchanming-ag/meteor-prettier-config": "workspace:*",
     "@supercharge/promise-pool": "^2.4.0",
     "@types/axios": "^0.14.0",
     "@types/fs-extra": "^9.0.13",

@@ -1,5 +1,5 @@
 ---
-"@shopware-ag/meteor-component-library": patch
+"@xchanming-ag/meteor-component-library": patch
 ---
 
 - Fix tooltip z-index position
